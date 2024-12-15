@@ -4,6 +4,8 @@ import ImageUpload from "./components/ImageUpload";
 import Canvas from "./components/Canvas";
 import ImageDisplay from "./components/ImageDisplay";
 import './styles/app.css'; // Import the CSS file
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -23,18 +25,22 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1>Image Inpainting Tool</h1>
-      <ImageUpload onImageUpload={handleImageUpload} />
-      {image && <Canvas image={image} onExportMask={handleMaskExport} />}
-      {maskImage && (
-        <div>
-          <ImageDisplay originalImage={image} maskImage={maskImage} />
-          <button onClick={handleClearCanvas}>Clear Mask</button> {/* Clear Mask Button */}
-        </div>
-      )}
-    </div>
+    <>
+      <Header />
+      <div className="app-container min-h-screen ">
+        <ImageUpload onImageUpload={handleImageUpload} />
+        {image && <Canvas image={image} onExportMask={handleMaskExport} />}
+        {maskImage && (
+          <div>
+            <ImageDisplay originalImage={image} maskImage={maskImage} />
+            {/* <button onClick={handleClearCanvas}>Clear Mask</button> */}
+          </div>
+        )}
+      </div>
+      <Footer />
+    </>
   );
+  
 };
 
 export default App;
