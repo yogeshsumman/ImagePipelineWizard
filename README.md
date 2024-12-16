@@ -45,19 +45,19 @@ git clone https://github.com/your-username/imagepipeline-wizard.git
 Navigate to the project directory:
 
 bash
-Copy code
+Copy code-->
 cd imagepipeline-wizard
 Install dependencies:
 
 bash
 Copy code
-npm install
+-->npm install
 # or
 yarn install
 Start the development server:
 
 bash
-Copy code
+Copy code-->
 npm start
 # or
 yarn start
