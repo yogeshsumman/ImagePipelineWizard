@@ -63,12 +63,3 @@ npm start
 yarn start
 Open the application in your browser at http://localhost:3000.
 
-Challenges and Solutions
-Canvas Integration:
-Integrating drawing libraries like Fabric.js required a deep dive into their APIs to implement mask drawing effectively. We referred to extensive documentation and community examples to resolve this.
-
-Mask Export:
-Ensuring the mask output matched the specifications (white for drawn areas, black for the background) required experimenting with canvas operations and image processing methods.
-
-Responsive UI:
-Displaying the original image and mask side-by-side presented layout challenges, which were solved using CSS Flexbox and Grid.
