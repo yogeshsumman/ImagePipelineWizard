@@ -1,4 +1,4 @@
-NOTE: if the code does not run and have some error after npm install use this command npm install --legacy-peer-deps
+NOTE: If the code does not run and there are errors after running npm install, use the command npm install --legacy-peer-deps
 
 ImagePipeline Wizard
 
